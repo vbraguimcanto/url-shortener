@@ -30,3 +30,18 @@ Para executar os testes unitários, você poderá executar com o seguinte comand
 make test
 ```
 
+
+### Testes da Aplicação
+
+1. Para testes na aplicação, você pode fazer requisições via cURL:
+
+```base
+curl --location 'localhost:8080/shorten' \
+--header 'Content-Type: application/json' \
+--data '{
+    "url": "http://www.google.com"
+}'
+```
+
+2. Para acessar a URL que será redirecionada, você pode acessar via navegador no endereço: localhost:8080/COD_URL_ENCURTADA
+
